@@ -1,0 +1,8 @@
+I just uploaded the new version v0.17.19 for Windows, Mac, Linux and Android.
+
+Everybody needs to upgrade to this version before the next hard fork. The hard fork will happen on 28 September, 10:00 UTC. (The mobile wallet also needs to be updated.)
+
+On this day we will switch to X16RV2. Also some other improvements will become active (better privacy, random salt for AES encryption). 
+
+When you convert from BitCash into BitCash Dollars and back the blockchain will now be able to store a min and max acceptable price. Version v0.17.19 will set this price range to +- 3% of the current price. This could be changed later if needed. The important thing is, that the blockchain will now be able to store this information. If a large price jump happens shortly after you sent the transaction and before it has been mined into a block, this mechanism will protect you so that you do not get a unacceptable price. The transaction will be removed from mempool if the price is out of range. You can then abandon the transaction and create a new transaction if you want. Or you can wait until the price is in the price range again and rebroadcast the transaction.
+
